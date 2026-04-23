@@ -15,5 +15,5 @@ PostgreSQL as a separate container using their official image, as per the offici
   - Default database : joplin
   - Postgres creds : joplin/joplin
 
-`docker run -p 22300:22300 joplin-server-standalone`
+`docker run -p 22300:22300 ghcr.io/lonode/joplin-server-standalone:latest`
 
