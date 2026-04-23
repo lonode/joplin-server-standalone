@@ -10,9 +10,10 @@ PostgreSQL as a separate container using their official image, as per the offici
 # Deployment
 
 - Default port 22300
-- Default database : joplin
-- Default user/pwd : joplin/joplin
-- PostgreSQL is hosted on its default port 5432 but not exposed externally (bound to localhost)
+- Default user/pwd : admin@localhost / admin
+- PostgreSQL is hosted on its default port 5432 but not exposed externally (bound to localhost). There is no reason to expose this port to the host.
+  - Default database : joplin
+  - Postgres creds : joplin/joplin
 
 `docker run -p 22300:22300 joplin-server-standalone`
 
